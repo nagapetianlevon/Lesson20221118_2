@@ -23,10 +23,17 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
         binding.getRoot();
 
 
-      //  setContentView(R.layout.activity_main);
+        binding.add.setOnClickListener(view -> {String name = binding.InputName.getText().toString();
+            String phone = binding.InputPhone.getText().toString();
+            binding.outputText.append(name + "\n" + phone + "\n");
+        });
+
+
+
        /* outputtext = (TextView) findViewById(R.id.outputText);
         inputName = findViewById(R.id.InputName);
         inputPhone = findViewById(R.id.InputPhone);
