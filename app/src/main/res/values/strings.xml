@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Contacts book</string>
+    <string name="input_name">Input Name</string>
+    <string name="input_phone">Input Phone</string>
+</resources>
